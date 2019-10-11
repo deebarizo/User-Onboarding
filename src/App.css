@@ -20,3 +20,21 @@
 .App-link {
   color: #09d3ac;
 }
+
+div.user-form {
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  margin: 0 auto 0.5rem auto;
+}
+
+label.checkbox-container {
+  display: block;
+  font-size: 0.75rem;
+}
+
+label.checkbox-container input {
+  display: inline-block;
+}
