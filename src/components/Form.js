@@ -18,7 +18,7 @@ const OnboardingForm = props => {
     if (status) {
       setUsers([...users, status]);
     }
-  }, [status, users]);
+  }, [status]);
 
   return (
     <div className="user-form">
@@ -47,7 +47,7 @@ const OnboardingForm = props => {
           <li>Name: {user.name}</li>
           <li>Email: {user.email}</li>
           <li>Password: {user.password}</li>
-          <li>Terms of Service: {user.tos}</li>
+          <li>Terms of Service: {user.tos ? "Yes" : "No"}</li>
         </ul>
       ))}
     </div>
