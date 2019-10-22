@@ -15,10 +15,17 @@ const OnboardingForm = props => {
   const { status, touched, errors, values } = props;
 
   useEffect(() => {
+    console.log("useEffect status", status);
+    console.log("useEffect users 1", users);
+    console.log("useEffect ...users", ...users);
     if (status) {
       setUsers([...users, status]);
     }
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status]);
+
+  console.log("useEffect users 2", users);
 
   return (
     <div className="user-form">
